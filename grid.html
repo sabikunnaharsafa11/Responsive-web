@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 200px) 50px 50px;
+           gap: 20px;
+        
+        } 
+
+        .box{
+            background-color: rgb(107, 201, 201);
+        }
+        #box-1{
+            grid-row: span 5;
+        }
+        #box-11, #box-12{
+            grid-column: span 3;
+            
+        }
+    </style>
+</head>
+<body> 
+    <div class="container">
+        <div class="box" id="box-1"><img style="width: 100%; height: 100%;" src="images/alpine-cornflower-3431590_640.jpg" alt=""></div>
+        <div class="box" id="box-2"><img style="width: 100%; height: 100%;" src="images/alpine-cornflower-3431590_640.jpg" alt=""></div>
+        <div class="box" id="box-3"><img style="width: 100%; height: 100%;" src="images/alpine-cornflower-3431590_640.jpg" alt=""></div>
+        <div class="box" id="box-4"><img style="width: 100%; height: 100%;" src="images/alpine-cornflower-3431590_640.jpg" alt="">4</div>
+        <div class="box" id="box-5"><img style="width: 100%; height: 100%;" src="images/alpine-cornflower-3431590_640.jpg" alt=""></div>
+        <div class="box" id="box-6"><img style="width: 100%; height: 100%;" src="images/alpine-cornflower-3431590_640.jpg" alt=""></div>
+        <div class="box" id="box-7"><img style="width: 100%; height: 100%;" src="images/alpine-cornflower-3431590_640.jpg" alt=""></div>
+        <div class="box" id="box-8"><img style="width: 100%; height: 100%;" src="images/alpine-cornflower-3431590_640.jpg" alt=""></div>
+        <div class="box" id="box-9"><img style="width: 100%; height: 100%;" src="images/alpine-cornflower-3431590_640.jpg" alt=""></div>
+        <div class="box" id="box-10"><img style="width: 100%; height: 100%;" src="images/alpine-cornflower-3431590_640.jpg" alt=""></div>
+        <div class="box" id="box-11"><img style="width: 100%; height: 100%;" src="images/alpine-cornflower-3431590_640.jpg" alt=""></div>
+        <div class="box" id="box-12"><img style="width: 100%; height: 100%;" src="images/alpine-cornflower-3431590_640.jpg" alt=""></div>
+    </div>
+</body>
+</html>
